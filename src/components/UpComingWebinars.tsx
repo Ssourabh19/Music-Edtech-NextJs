@@ -60,9 +60,9 @@ export default function UpComingWebinars() {
         <div className='mt-10'>
 <HoverEffect items={featuredWebinars.map((webinar)=>(
   {
-    title:webinar.title,
-    description:webinar.description,
-    link:"/"
+    title:webinar?.title,
+    description:webinar?.description,
+    link:`/webinars${webinar?.slug}`
   }
 ))}/>
         </div>

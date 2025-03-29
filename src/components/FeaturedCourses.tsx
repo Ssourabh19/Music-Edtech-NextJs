@@ -36,7 +36,7 @@ export default function FeaturedCourses() {
                             <p className="text-lg sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">{course.title}</p>
                             <p className="text-sm text-neutral-600 dark:text-neutral-400 flex-grow">{course.description}</p>
                             <Link href={`/courses/${course.slug}`}
-                            className='mt-10 border rounded-md px-2 py-1 '>Learn More</Link>
+                            className='mt-10 border rounded-md px-2 py-1 text-white'>Learn More</Link>
                             </div>
                          </BackgroundGradient>
                         </div>

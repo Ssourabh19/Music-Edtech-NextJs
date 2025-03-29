@@ -1,9 +1,7 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+
+
 
 @theme inline {
   --color-background: var(--background);
@@ -12,26 +10,16 @@
   --font-mono: var(--font-geist-mono);
   --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
   --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
- 
+  
+
   @keyframes scroll {
     to {
       transform: translate(calc(-50% - 0.5rem));
     }
   }
 
-}
+ 
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
 @keyframes spotlight {
   0% {
@@ -43,4 +31,9 @@ body {
     transform: translate(-50%, -40%) scale(1);
   }
 }
+
+
+
+
+
 
